@@ -15,7 +15,7 @@ public class Config {
 
     private static final ModConfigSpec.IntValue CLEANUP_INTERVAL_DAYS = BUILDER
         .comment("Real-world days between cleanup runs. This uses system time, not game time.")
-        .defineInRange("cleanupIntervalDays", 1, 1, Integer.MAX_VALUE);
+        .defineInRange("cleanupIntervalDays", 7, 1, Integer.MAX_VALUE);
 
     private static final ModConfigSpec.IntValue KEPT_CENTER_RADIUS_CHUNKS = BUILDER
         .comment("End chunks with both x and z inside [-radius, radius] are always kept.")
